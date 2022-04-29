@@ -1,0 +1,64 @@
+{
+    "name": "awesome-crestron",
+    "description": "A curated list of awesome Crestron resources",
+    "version": "0.0.0-development",
+    "keywords": [
+        "awesome",
+        "crestron",
+        "ch5",
+        "react",
+        "vue",
+        "angular",
+        "svelte",
+        "javascript",
+        "csharp",
+        "dotnet"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Norgate-AV-Solutions-Ltd/awesome-crestron.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Norgate-AV-Solutions-Ltd/awesome-crestron/issues"
+    },
+    "engines": {
+        "node": ">=14"
+    },
+    "scripts": {
+        "prepare": "husky install",
+        "semantic-release": "semantic-release",
+        "commit": "git-cz",
+        "pretty:fix": "prettier --write .",
+        "doctoc": "doctoc --title '## Contents 📖' README.md",
+        "contrib:add": "all-contributors add",
+        "contrib:generate": "all-contributors generate",
+        "contrib:check": "all-contributors check"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^16.2.3",
+        "@commitlint/config-conventional": "^16.2.1",
+        "@semantic-release/changelog": "^6.0.1",
+        "@semantic-release/git": "^10.0.1",
+        "all-contributors-cli": "^6.20.0",
+        "cz-conventional-changelog": "3.3.0",
+        "doctoc": "^2.1.0",
+        "husky": "^7.0.4",
+        "lint-staged": "^12.4.0",
+        "prettier": "^2.6.0",
+        "semantic-release": "^19.0.2"
+    },
+    "lint-staged": {
+        "*?(test|spec).{js,jsx,ts,tsx}": [
+            "yarn pretty:fix"
+        ],
+        "*.{css,scss,md,html,json,yml,yaml}": [
+            "yarn pretty:fix"
+        ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}
