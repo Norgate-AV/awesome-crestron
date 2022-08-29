@@ -46,7 +46,7 @@
         "husky": "^7.0.4",
         "lint-staged": "^12.4.0",
         "prettier": "^2.6.0",
-        "semantic-release": "^19.0.2"
+        "semantic-release": "^19.0.5"
     },
     "lint-staged": {
         "*?(test|spec).{js,jsx,ts,tsx}": [
